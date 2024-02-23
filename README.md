@@ -23,6 +23,35 @@
 
 ----
 
+# 코드 설명
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/1f371293-03ad-4507-9be0-640a4a762a72)
+###Gym 라이브러리
+-  openAI 사가 출시한 강화학습 전용 라이브러리
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/798b4295-b469-40d2-a19f-5b953578becb)
+
+-Gym을 구동하는 주요 3가지 함수
+
+:Make, Step 과 Reset
+
+Make: 사용하고 싶은 라이브러리를 불러오는 것
+
+Reset: state 변수를 0 주변의 작은 범주안의 값으로 초기화함
+
+Step: 정보를 반환하는 값
+- 관찰(object): 환경에 대한 관찰을 나타내는 객체이며, 환경에 따라 달라짐
+- reward: 이전의 행동을 통해 얻어지는 보상의 양. 그 크기는 환경에 따라 달라지지만 목표는 언제나 보상의 총량을 높이는 것이다.
+- Done(boolen): 환경을 reset 해야할지 나타내는 진리값이다. done=True 라면 에피소드가 종료되었음을 나타냅니다.
+- Info는 디버깅에 유용한 진단 정보이다.
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/9fde9a92-4d13-4215-a206-7d8d0465f60d)
+
+- 실제 state의 경우 연속적인 값을 가지고 있음-> 무한한 종류의 state를 가질 수 있는 문제, Q-Table을 만들기 위해선 연속적인 값을 이산값으로 변환하는 함수 discretizer
+
+
+
+
 
 
 
