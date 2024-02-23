@@ -49,12 +49,35 @@ Step: 정보를 반환하는 값
 
 - 실제 state의 경우 연속적인 값을 가지고 있음-> 무한한 종류의 state를 가질 수 있는 문제, Q-Table을 만들기 위해선 연속적인 값을 이산값으로 변환하는 함수 discretizer
 
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/0ba902af-8cb7-432a-8566-fcc3a2617022)
+- Q-table: 각 state에서 action이 가지는 값을 모두 가지고 있음
+
+- <Q-table 초기화>
+0 행렬로 초기화 후, shape(현재 데이터 출력)
+
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/e7687010-6bca-47ad-a52f-b5445f0306ee)
+
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/6f921b29-9ff7-4984-b12b-9bbc51311cea)
+- learning_rate 함수 정의
+
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/c05d504b-e22e-4cc5-8b87-5ededd486ffc)
+- exploration_rate 함수 정의
 
 
 
 
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/870f37cb-4376-448e-89b9-c45e75378344)
 
+![image](https://github.com/matrix215/RL_cartpole_project/assets/101815603/e52809f8-7e04-4b44-beb6-98df6ff6b495)
 
+- Q-learing을 시행한 후 각각의 state값을 출력함
+
+- 각각 observation에는 4가지 즉, 카트 위치, 카트 속도, 폴 각도, 폴 각도 속도
+- 1이 나타내는 것은 보상
+- Done: 끝나지 않았음으로 False
+- Info= Default로 Fasle 값
 
 
 
